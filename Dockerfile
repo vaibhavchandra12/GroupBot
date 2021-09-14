@@ -68,9 +68,6 @@ RUN pip3 install --upgrade pip setuptools
 RUN git clone https://github.com/vaibhavchandra12/GroupBot /root/GroupBot
 WORKDIR /root/GroupBot
 
-#Copy config file to /root/GroupBot/GroupBot
-COPY ./GroupBot/sample_config.py ./GroupBot/config.py* /root/GroupBot/GroupBot/
-
 ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
