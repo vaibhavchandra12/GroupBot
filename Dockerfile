@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/GroupBot
-RUN git clone -b shiken https://github.com/vaibhavchandra/KabeerGroupBott /root/GroupBot
+RUN git clone -b shiken https://github.com/vaibhavchandra/KabeerGroupBot /root/GroupBot
 WORKDIR /root/GroupBot
 
 #Copy config file to /root/GroupBot/GroupBot
